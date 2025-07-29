@@ -75,12 +75,22 @@ body {
   margin-top: 8px;
 }
 
+.calendar th {
+  font-weight: bold; /* ← 曜日を太字に */
+}
+
 .calendar th,
 .calendar td {
   padding: 4px 6px;
   text-align: center;
   width: 24px;
   height: 24px;
+}
+
+.calendar .month-title {
+  font-size: 18px;
+  font-weight: bold; /* ← 太字に */
+  margin-bottom: 6px;
 }
 
 .today {
