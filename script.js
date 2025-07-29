@@ -30,7 +30,7 @@ function generateCalendar() {
   const calendar = document.getElementById('calendar');
 
   // ヘッダー（月と曜日）
-  let html = `<div style="font-size:18px; margin-bottom:6px;">${month + 1}月</div>`;
+  let html = `<div class="month-title">${month + 1}月</div>`;
   html += '<table><tr>';
   weekdays.forEach(day => html += `<th>${day}</th>`);
   html += '</tr><tr>';
