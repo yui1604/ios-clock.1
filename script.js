@@ -22,10 +22,11 @@ function generateCalendar() {
   const month = now.getMonth(); // 0-11
   const today = now.getDate();
 
-  const firstDay = new Date(year, month, 1).getDay(); // 曜日
+  const jsDay = new Date(year, month, 1).getDay(); // 曜日
+  const firstDay = (jsDay === 0) ? 6 : jsDay - 1; // 月=0
   const lastDate = new Date(year, month + 1, 0).getDate(); // 月末日
 
-  const weekdays = ['日', '月', '火', '水', '木', '金', '土'];
+  const weekdays = ['月', '火', '水', '木', '金', '土','日'];
   const calendar = document.getElementById('calendar');
 
   // ヘッダー（月と曜日）
