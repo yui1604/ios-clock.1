@@ -97,9 +97,13 @@ body {
   background-color: white;
   color: black;
   border-radius: 50%;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
+  width: 28px;
+  height: 28px;
+  display: flex; /* ← ここを変更 */
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0 auto;  /* ← 中央寄せ */
+  padding: 0;
 }
