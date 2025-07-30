@@ -81,10 +81,10 @@ body {
 
 .calendar th,
 .calendar td {
-  padding: 4px 6px;
+  padding: 0;
   text-align: center;
   width: 24px;
-  height: 24px;
+  height: auto;
 }
 
 .calendar .month-title {
